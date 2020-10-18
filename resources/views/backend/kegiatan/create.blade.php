@@ -7,7 +7,7 @@
 
       <div class="card border-0 shadow">
         <div class="card-body">
-        <form action="{{route('backend.kegiatan.create')}}" enctype="multipart/form-data" method="POST">
+        <form action="{{route('backend.kegiatan.save')}}" enctype="multipart/form-data" method="POST">
           @csrf
           @if(session('success'))
             <div class="alert alert-success">

@@ -23,6 +23,7 @@ Route::group(['prefix'=> 'activity'], function(){
     Route::get('index', 'ActivityController@index')->name('backend.kegiatan.index');
 
     Route::get('create','ActivityController@create')->name('backend.kegiatan.create');
+    Route::post('save', 'ActivityController@store')->name('backend.kegiatan.save');
     Route::get('tampil-formEdit', 'activityController@edit')->name('backend.kegiatan.edit');
 
 });
