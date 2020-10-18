@@ -21,7 +21,7 @@ class ActivityController extends Controller
     public function create()
 {
     $getKode = $this->activity->generateCode();
-    return view('backend.kegiatan.create' ,compact('getkode'));
+    return view('backend.kegiatan.create' ,compact('getKode'));
 }
     public function edit()
     {

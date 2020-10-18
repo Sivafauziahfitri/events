@@ -14,7 +14,7 @@
                             <a href="" class="nav-link">Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('activity')}}" class="nav-link">Master Kegiatan</a>
+                            <a href="{{route('backend.kegiatan.index')}}" class="nav-link">Master Kegiatan</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Master Pendaftaran</a>

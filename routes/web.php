@@ -20,10 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix'=> 'activity'], function(){
-    Route::get('index', 'ActivityController@index')->name('activity');
+    Route::get('index', 'ActivityController@index')->name('backend.kegiatan.index');
 
-    Route::get('create','ActivityController@create')->name('activity.create');
-    Route::get('tampil-formEdit', 'activityController@edit')->name('activity.tampil-formEdit');
+    Route::get('create','ActivityController@create')->name('backend.kegiatan.create');
+    Route::get('tampil-formEdit', 'activityController@edit')->name('backend.kegiatan.edit');
 
 });
 
@@ -38,5 +38,3 @@ Route::group(['prefix'=> 'registers'], function(){
 
 });
 
-
-   

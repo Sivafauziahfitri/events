@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Activity extends Model
 {
-    protected $table = 'activitys';
+    protected $table = 'kegiatans';
     protected $guarded = [];
 
     public function generateCode()
@@ -16,7 +16,7 @@ class Activity extends Model
 
         $_kode = "ABEV/camp-c/$tahun";
 
-        $kode = Activity :: where('code_activity', 'like', 'ABEV/camp-c/'.$tahun."__")->orderBy('code_activity');
+        $kode = Activity :: where('kode_kegiatan', 'like', 'ABEV/camp-c/'.$tahun."__")->orderBy('kode_kegiatan');
 
         $kode = $kode->count();
 

@@ -7,7 +7,7 @@
 
       <div class="card border-0 shadow">
         <div class="card-body">
-        <form action="{{route('kegiatan.save')}}" enctype="multipart/form-data" method="POST">
+        <form action="{{route('backend.kegiatan.create')}}" enctype="multipart/form-data" method="POST">
           @csrf
           @if(session('success'))
             <div class="alert alert-success">
@@ -19,7 +19,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                     <label for="name">Kode Kegiatan</label>
-                    <input type="" name="code_activity"class="form-control" value="{{ $getcode }}" placeholder=""  id="" readonly>
+                    <input type="" name="code_activity"class="form-control" value="{{ $getKode }}" placeholder=""  id="" readonly>
                 </div>
 
               </div>
