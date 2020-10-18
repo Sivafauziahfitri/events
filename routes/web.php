@@ -34,8 +34,7 @@ Route::group(['prefix'=> 'users'], function(){
 });
 
 Route::group(['prefix'=> 'registers'], function(){
-    Route::get('index','register\registerController@index')->name('registers');
-    Route::get('ambil-formulir', 'register\tegistersController@create')->name('registers.ambil-formulir');
-
+    Route::get('index','Register\RegisterController@index')->name('backend.registers.index');
+    Route::get('ambil-formulir', 'Register\RegisterController@create')->name('backend.registers.create');
+    Route::get('show-register','Register\RegisterController@show')->name('backend.registers.show');
 });
-
