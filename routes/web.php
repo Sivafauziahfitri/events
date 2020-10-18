@@ -18,3 +18,25 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix'=> 'activity'], function(){
+    Route::get('index', 'ActivityController@index')->name('activity');
+
+    Route::get('create','ActivityController@create')->name('activity.create');
+    Route::get('tampil-formEdit', 'activityController@edit')->name('activity.tampil-formEdit');
+
+});
+
+Route::group(['prefix'=> 'users'], function(){
+    Route::get('index','user\Usercontroller@index')->name('users');
+
+});
+
+Route::group(['prefix'=> 'registers'], function(){
+    Route::get('index','register\registerController@index')->name('registers');
+    Route::get('ambil-formulir', 'register\tegistersController@create')->name('registers.ambil-formulir');
+
+});
+
+
+   
