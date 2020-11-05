@@ -32,7 +32,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                     <label for="">Tanggal</label>
-                    <input type="text" name="date" class="form-control"id=""  placeholder="">
+                    <input type="date" name="date" class="form-control"id=""  placeholder="">
                 </div>
 
               </div>
@@ -45,8 +45,9 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                    <label for="">Price</label>
+                    <label for="">Price</label>                     
                     <input type="text" name="price"  class="form-control"id="" placeholder="">
+                    
                 </div>
 
               </div>
@@ -60,6 +61,7 @@
                 <div class="form-group">
                     <label for="">Capacity</label>
                     <input type="number" name="capacity" id="" class="form-control" placeholder="">
+                  </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">

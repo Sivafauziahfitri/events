@@ -24,12 +24,15 @@ Route::group(['prefix'=> 'activity'], function(){
 
     Route::get('create','ActivityController@create')->name('backend.kegiatan.create');
     Route::post('save', 'ActivityController@store')->name('backend.kegiatan.save');
-    Route::get('tampil-formEdit', 'activityController@edit')->name('backend.kegiatan.edit');
+    Route::get('tampil-formEdit/{activity}', 'ActivityController@edit')->name('backend.kegiatan.edit');
+    Route::patch('Update/{activity}', 'ActivityController@update')->name('backend.kegiatan.update');
 
+    
 });
 
-Route::group(['prefix'=> 'users'], function(){
-    Route::get('index','user\Usercontroller@index')->name('users');
+Route::Group(['prefix' => 'users'], function(){
+    Route::get('index', 'User\UserController@index')->name('users');
+    Route::get('index', 'Kegiatan\KegiatanController@index')->name('users.Kegiatan.index');
 
 });
 
