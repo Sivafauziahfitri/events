@@ -20,7 +20,7 @@
                             <a href="{{route('backend.registers.index')}}" class="nav-link">Master Pendaftaran</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('users')}}" class="nav-link">User</a>
+                            <a href="{{route('backend.registers.index')}}" class="nav-link">User</a>
                         </li>
                     </ul>
 

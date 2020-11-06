@@ -20,7 +20,7 @@
             <thead>
               <tr>
                 <th>Kode Kegiatan</th>
-                <th>Tanggal</th>
+                <th>Tanggal</th>  
                 <th>Status</th>
                 <th>Option</th>
               </tr>
